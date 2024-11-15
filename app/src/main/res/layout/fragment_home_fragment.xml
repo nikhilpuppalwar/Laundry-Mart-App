@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ui_home.home_fragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/imvCornerShapeOne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imvCornerShapeOne"
+            android:layout_width="405dp"
+            android:layout_height="177dp"
+            android:layout_marginTop="104dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/laundry_image_clothes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CornerCut" />
+
+        <TextView
+            android:id="@+id/txt_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Select the Service"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imvCornerShapeOne" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_laundry"
+            android:layout_width="104dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home_button_"
+            android:scaleType="fitCenter"
+            android:src="@drawable/laundry_machine"
+            app:layout_constraintEnd_toStartOf="@+id/btn_iron"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_service"
+            app:shapeAppearanceOverlay="@style/CornerCut" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_iron"
+            android:layout_width="104dp"
+            android:layout_height="110dp"
+            android:background="@drawable/home_button_"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iron"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_iron_laundry"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_laundry"
+            app:layout_constraintTop_toTopOf="@+id/btn_laundry"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_iron_laundry"
+            android:layout_width="104dp"
+            android:layout_height="110dp"
+            android:background="@drawable/home_button_"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iron_laundry"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_iron"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_iron"
+            app:layout_constraintTop_toTopOf="@+id/btn_iron" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</FrameLayout>

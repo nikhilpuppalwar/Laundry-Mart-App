@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_home.Schedule_pickup_fragment">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+
+        <TextView
+            android:id="@+id/schedule_pickup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule a Pickup"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Pickup Date"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/pickup_date_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Date"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Pickup Time"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/pickup_time_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Time"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup Address"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/pickup_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            android:inputType="textPostalAddress"
+            android:background="@android:drawable/editbox_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Notes (Optional)"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/notes_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Any specific instructions?"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:background="@android:drawable/editbox_background" />
+
+
+        <Button
+            android:id="@+id/confirm_pickup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Pickup"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

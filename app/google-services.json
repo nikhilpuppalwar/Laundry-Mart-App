@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "726959285688",
+    "project_id": "laundry-mart-dc6b4",
+    "storage_bucket": "laundry-mart-dc6b4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726959285688:android:d4b782fa1be0ea8d2b1b4d",
+        "android_client_info": {
+          "package_name": "pccoe.student.laundrymart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGKXgVp5pScij4YmFVjeO0ko8_ZB-wOFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

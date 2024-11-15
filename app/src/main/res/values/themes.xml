@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LaundryMart" parent="Theme.Material3.DayNight.NoActionBar">
+  <item name="android:colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+
+    <style name="Theme.LaundryMart" parent="Base.Theme.LaundryMart" />
+
+    <style name="App.custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/blue</item>
+    </style>
+
+
+
+    <style name="CustomDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize color for the calendar header, selection, etc. -->
+        <item name="colorPrimary">#4CAF50</item> <!-- Header background color -->
+        <item name="colorPrimaryDark">#388E3C</item> <!-- Status bar color in dialog -->
+        <item name="colorAccent">#FF9800</item> <!-- Accent color for selected date -->
+        <item name="android:textColorPrimary">#4D2C2C</item> <!-- Header text color -->
+        <item name="android:textColorSecondary">#000000</item> <!-- Day numbers color -->
+    </style>
+
+</resources>

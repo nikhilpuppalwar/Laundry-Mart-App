@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_to_services"
+    app:startDestination="@id/home_fragment2">
+    <fragment
+        android:id="@+id/home_fragment2"
+        android:name="pccoe.student.laundrymart.ui_home.home_fragment"
+        android:label="fragment_home_fragment"
+        tools:layout="@layout/fragment_home_fragment" >
+        <action
+            android:id="@+id/action_home_fragment2_to_service_laundry"
+            app:destination="@id/service_laundry" />
+        <action
+            android:id="@+id/action_home_fragment2_to_service_laundry_iron"
+            app:destination="@id/service_laundry_iron" />
+        <action
+            android:id="@+id/action_home_fragment2_to_services_iron"
+            app:destination="@id/services_iron" />
+    </fragment>
+    <activity
+        android:id="@+id/service_laundry"
+        android:name="pccoe.student.laundrymart.service_laundry"
+        android:label="activity_service_laundry"
+        tools:layout="@layout/activity_service_laundry" />
+    <activity
+        android:id="@+id/services_iron"
+        android:name="pccoe.student.laundrymart.services_iron"
+        android:label="activity_services_iron"
+        tools:layout="@layout/activity_services_iron" />
+    <activity
+        android:id="@+id/service_laundry_iron"
+        android:name="pccoe.student.laundrymart.service_laundry_iron"
+        android:label="activity_service_laundry_iron"
+        tools:layout="@layout/activity_service_laundry_iron" />
+</navigation>
